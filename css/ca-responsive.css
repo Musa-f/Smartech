@@ -1,0 +1,79 @@
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderContainer{
+    height: 400px;
+    width: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.sliderIcon{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .6;
+    transition: .4s linear;
+    font-size: 3rem;
+}
+
+.sliderIcon:hover{
+    border-radius: 50%;
+    background: #6472AC;
+    color: white;
+    height: 70px;
+    width: 70px;
+}
+
+#right{
+    right: 3%;
+}
+
+#left{
+    left: 3%;
+}
+
+.sliderContent{
+    height: 74%;
+    width: 74%;
+    justify-self: center;
+    justify-content: center;
+}
+
+.slide{
+    height: 100%;
+    display: none;
+}
+
+.slideImg{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide{
+    text-align: center;
+}
+
+/*Slide ajouté sur le fichier JS*/
+.slideActive{
+    display: block;
+}
+
+img{
+    width: 80%;
+}

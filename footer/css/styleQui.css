@@ -1,0 +1,96 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+
+section {
+    margin: 5%
+}
+
+.titreH2{
+    color: #6472AC;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+div img:not(.logo){
+    height: 20vh;
+    box-shadow: 5px 5px 15px gray;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;
+    justify-self: center;
+    align-self: center;
+}
+
+#histoire, #services, #valeurs{
+    text-align: justify;
+    align-self: center;
+}
+
+.item{
+    margin: 5%;
+}
+
+.mot{
+    font-weight: bold;
+    color: #6472AC;
+}
+
+@media only screen and (min-width: 1024px){
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);}
+
+#photoEquipe{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+}
+
+#photoTel{
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
+    align-self: center;
+}
+
+#photoValeurs{
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    align-self: center;
+}
+
+#histoire{
+    grid-column: 2 /span 3;
+    grid-row: 1;
+    text-align: justify;
+    align-self: center;
+    justify-self: center;
+}
+
+#services{
+    grid-column: 1 /span 2;
+    grid-row: 2;
+    text-align: justify;
+    align-self: center;
+    justify-self: center;
+}
+
+#valeurs{
+    grid-column: 2 /span 3;
+    grid-row: 3;
+    text-align: justify;
+    align-self: center;
+    justify-self: center;
+}
+    
+}

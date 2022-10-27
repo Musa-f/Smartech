@@ -1,0 +1,16 @@
+.titreH2{
+    color: #6472AC;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+.mention{
+    text-align: justify;
+    overflow-y: scroll;
+    height: 70vh;
+    background-color: #F5F6F8;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}

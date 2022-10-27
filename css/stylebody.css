@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap');
+
+.espacement{
+    margin-bottom: 4%;
+    box-shadow: 0px 0px 30px #323552;
+}
+
+.titre{
+    font-family: Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.font-style2{
+    color: #323552;
+}
+
+.font-style1{
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #323552;
+    color: white;
+}
+
+/*Disposition du catalogue*/
+
+.img1{
+    width: 130px;
+    border-radius: 100%;
+    transition: .3s ease-in-out;
+}
+
+.img1:hover{
+    width: 150px;
+    box-shadow: 5px 5px 20px #323552;
+}
+
+.logos1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width:768px) {
+    .logos1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .one{
+        grid-column: 1;
+    }
+    .logos1 div {
+        margin: 3%;
+    }
+}

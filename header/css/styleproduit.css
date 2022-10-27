@@ -1,0 +1,56 @@
+section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 5fr 1fr;
+}
+
+.image{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.infos{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.boutton{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+}
+
+a{
+    color: unset;
+}
+
+button{
+    border: solid 2px #6472AC;
+    background: none;
+    cursor: pointer;
+    color: #6472AC;
+    border-radius: 9px;
+    padding: 1vw;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background: #6472AC;
+    border: solid 2px #6472AC;
+    color: white;
+    border-radius: 7px;
+    padding: 1vw;
+}
+
+@media (max-width: 900px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        text-align: center;
+    }
+    .boutton{
+        text-align: end;
+    }
+}

@@ -1,0 +1,55 @@
+.regroup {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titre{
+    color: #6472AC;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+section form div {
+    width: 100%;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 2rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    width: 100%;
+    height: 45px;
+    background-color: #F5F6F8;
+}
+
+/* BOUTON POUR ENVOYER */
+input[type=submit] {
+    border: solid 2px #6472AC;
+    background: none;
+    cursor: pointer;
+    color: #6472AC;
+    border-radius: 9px;
+    padding: 2.5%;
+    font-size: 1.2rem;
+}
+
+input[type=submit]:hover {
+    background: #6472AC;
+    border: solid 2px #6472AC;
+    color: white;
+    border-radius: 7px;
+    padding: 2.5%;
+}
+
+/* MEDIA */
+@media all and (max-width:425px) {
+    .regroup {
+        display: block;
+    }
+}

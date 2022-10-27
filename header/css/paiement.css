@@ -1,0 +1,67 @@
+/*Agencement du formulaire*/
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.boite1, .boite2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.modep{
+    padding-bottom: 5%;
+}
+
+/*Design du formulaire*/
+input[type=text],[type=number]{
+    border: none;
+    color: #555555;
+    background-color: #F5F6F8;
+    height: 45px;
+    width: 90%;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 2rem;
+}
+
+/*Design input submit*/
+input[type=submit]{
+    border: solid 2px #6472AC;
+    background: none;
+    cursor: pointer;
+    color: #6472AC;
+    border-radius: 9px;
+    padding: 1vw;
+    margin: 2%;
+    font-size: 1.2rem;
+}
+
+input[type=submit]:hover{
+    background: #6472AC;
+    border: solid 2px #6472AC;
+    color: white;
+    border-radius: 7px;
+    padding: 1vw;
+    margin: 2%;
+}
+
+.boutton{
+    text-align: center;
+}
+
+/*Titre h2 de la page*/
+.titre{ 
+    color: #6472AC;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
