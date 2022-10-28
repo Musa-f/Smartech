@@ -7,7 +7,6 @@ include_once "../catalogue/bdd.php";
 <section>
 <?php 
     $id = $_GET['id'];
-    //$imp = implode(',', $id);
     $produit = mysqli_query($bdd, "SELECT * FROM telephones WHERE id=$id");
     foreach($produit as $product){
     ?>

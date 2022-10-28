@@ -4,9 +4,9 @@ include_once '../catalogue/bdd.php';
 $linkstyle = '<link rel="stylesheet" href="../header\css\panierstyle.css">';
 require 'a-header.php';
 
-if(isset($_GET['del'])){
+if(isset($_GET['del'])){ 
     $id_del = $_GET['del'];
-    unset($_SESSION['panier'][$id_del]);
+    unset($_SESSION['panier'][$id_del]); //supprime le produit
 }
 ?>
 
@@ -16,18 +16,18 @@ if(isset($_GET['del'])){
         <div id="container">
             <?php 
             $total = 0;
-            if(!isset($_SESSION['panier']))
+            if(!isset($_SESSION['panier'])) //si la session panier est nulle (array vide)
             {
                 echo '<p>Votre panier est vide</p>';
             }
             else
             {
-                $ids = array_keys($_SESSION['panier']);
+                $ids = array_keys($_SESSION['panier']); //on récupère les clés de l'array dans une variable
                 if(empty($ids)){
                     echo '<p>Votre panier est vide</p>';
                 } else{ 
                     $produits = mysqli_query($bdd, "SELECT * FROM telephones WHERE id IN (".implode(',', $ids).")");
-                    foreach($produits as $produit):
+                    foreach($produits as $produit): //affiche un par un
                         $total = $total + $produit['price'];
                 ?>
             <div id="articles">
