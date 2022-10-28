@@ -14,7 +14,11 @@ section {
     margin: 5%;
 }
 
-a {
+.hovermenu:hover{
+    border-bottom: solid white 1px;
+}
+
+a{
     text-decoration: none;
     font-size: 20px;
 }

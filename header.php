@@ -21,10 +21,10 @@
                 </a>
             </div>
             <div class="onglets">
-                <a href="index.php">Accueil</a>
-                <a href="header/contact.php">Contact</a>
-                <a href="header/compte.php">Compte</a>
-                <a href="header/panier.php">Panier</a>
+                <a href="index.php" class="hovermenu">Accueil</a>
+                <a href="header/contact.php" class="hovermenu">Contact</a>
+                <a href="header/compte.php" class="hovermenu">Compte</a>
+                <a href="header/panier.php" class="hovermenu">Panier</a>
             </div>
             <div class="onglets_tel">
                 <span class="line"></span>
