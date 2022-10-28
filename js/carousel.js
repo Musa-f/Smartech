@@ -6,37 +6,49 @@ const slide5 = document.querySelector("#slide5");
 const slides = [slide1, slide2, slide3, slide4, slide5];
 
 let currentSlideIndex = 0;
-const next = document.querySelector("#right");
+const next = document.querySelector('#right');
 const previous = document.querySelector("#left");
 
-const printSlide = (target) => {
-  for(i=0; i<slides.length; i++) {
-    slides[i].classList.remove("slideActive");
-  }
-  target.classList.add("slideActive"); // classe display actif
+
+function printSlide(listeIndex) {
+    for(i=0; i<slides.length; i++) {
+        slides[i].classList.remove("slideActive");
+    }
+    listeIndex.classList.add("slideActive");
 }
 
-printSlide(slides[currentSlideIndex]);
+printSlide(slides[currentSlideIndex]); 
 
-const handleNext = () => {
-  if(currentSlideIndex === slides.length - 1) {
-    currentSlideIndex = 0;
-  }
-  else {
-    currentSlideIndex += 1;
-  }
-  printSlide(slides[currentSlideIndex]);
+
+function handleNext(){
+    if(currentSlideIndex === slides.length - 1) {
+        currentSlideIndex = 0;
+    }
+    else {
+        currentSlideIndex += 1;
+    }
+    printSlide(slides[currentSlideIndex]);
 }
 
-const handlePrevious = () => {
-  if(currentSlideIndex === 0) {
-    currentSlideIndex = slides.length - 1;
-  }
-  else {
-    currentSlideIndex -= 1;
-  }
-  printSlide(slides[currentSlideIndex]);
+function handlePrevious(){
+    if(currentSlideIndex === 0) {
+        currentSlideIndex = slides.length - 1;
+    }
+    else {
+        currentSlideIndex -= 1;
+    }
+    printSlide(slides[currentSlideIndex]);
 }
 
-next.addEventListener("click", handleNext);
-previous.addEventListener("click", handlePrevious);
+
+//Appel fonction HandleNext et HandlePrevious
+next.addEventListener('click',function ()
+{
+    handleNext();
+}  );
+
+previous.addEventListener('click',function ()
+{
+    handlePrevious();
+}  );
+
