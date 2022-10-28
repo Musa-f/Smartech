@@ -18,13 +18,13 @@ if(isset($_GET['del'])){
             $total = 0;
             if(!isset($_SESSION['panier'])) //si la session panier est nulle (array vide)
             {
-                echo '<p>Votre panier est vide</p>';
+                echo '';
             }
             else
             {
                 $ids = array_keys($_SESSION['panier']); //on récupère les clés de l'array dans une variable
                 if(empty($ids)){
-                    echo '<p>Votre panier est vide</p>';
+                    echo '';
                 } else{ 
                     $produits = mysqli_query($bdd, "SELECT * FROM telephones WHERE id IN (".implode(',', $ids).")");
                     foreach($produits as $produit): //affiche un par un

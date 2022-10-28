@@ -37,8 +37,12 @@
     width: 70px;
 }
 
-#right{
-    margin-left: 30%;
+.right{
+    margin-right: -30px;
+}
+
+.left{
+    margin-right: 30px;
 }
 
 #right{

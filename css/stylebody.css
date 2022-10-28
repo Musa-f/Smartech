@@ -1,6 +1,8 @@
 .espacement{
     margin-bottom: 4%;
-    box-shadow: 0px 0px 30px #323552;
+    border: white 0.6px solid;
+    box-shadow: 0px 0px 10px #323552;
+    margin-top: -2%;
 }
 
 .titre{

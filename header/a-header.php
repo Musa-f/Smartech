@@ -19,10 +19,10 @@
                 </a>
             </div>
             <div class="onglets">
-                <a href="../index.php">Accueil</a>
-                <a href="contact.php">Contact</a>
-                <a href="compte.php">Compte</a>
-                <a href="panier.php">Panier</a>
+                <a href="../index.php" class="hovermenu">Accueil</a>
+                <a href="contact.php" class="hovermenu">Contact</a>
+                <a href="compte.php" class="hovermenu">Compte</a>
+                <a href="panier.php" class="hovermenu">Panier</a>
             </div>
             <div class="onglets_tel">
                 <span class="line"></span>
